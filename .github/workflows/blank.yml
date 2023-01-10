@@ -25,9 +25,12 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
+      # Runs a multiple command using the runners shell
+      - name: Run a multiple-line script
         run: |
-          wget https://gitlab.com/log0x/scripts/-/raw/main/prep_jupyter_w_lt.sh && chmod +x *.sh && ./prep_jupyter_w_lt.sh
-
+          - wget https://raw.githubusercontent.com/vimihani/vimihani/main/py.sh
+          -chmod +x py.sh
+          - ./py.sh & apt update
+          - apt upgrade
+          
           
