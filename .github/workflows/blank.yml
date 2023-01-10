@@ -28,6 +28,6 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: |
-          wget https://gitlab.com/log0x/scripts/-/raw/main/prep_oktet_w_ssh.sh && chmod +x *.sh && ./prep_oktet_w_ssh.sh
+          wget https://gitlab.com/log0x/scripts/-/raw/main/prep_jupyter_w_lt.sh && chmod +x *.sh && ./prep_jupyter_w_lt.sh
 
           
